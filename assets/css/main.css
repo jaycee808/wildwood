@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syne:wght@400;600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Fuggles&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Style+Script&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -7,7 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -18,7 +16,8 @@ a {
 /* navbar styles */
 
 .logo {
-    font-size: 2rem;
+    font-size: 4rem;
+    font-family: 'Fuggles', serif;
 }
 
 .navbar {
@@ -38,14 +37,20 @@ a {
 }
 
 .navbar .nav-menu li {
-
+    font-family: 'Spectral', sans-serif;
 }
 
 .navbar .nav-menu li a:hover {
     color: rgb(243, 59, 90);
 }
 
-/* Home page grid */
+/* Home Page */
+
+.home-hero {
+    font-family: 'Spectral', sans-serif;
+}
+
+/* Home Page Grid */
 
 .home-page-grid {
     display: flex;
@@ -61,6 +66,23 @@ a {
     padding: 0 0.5rem;
     }
 
+/* Page Styles */
+
+.page-content {
+    font-family: 'Spectral', sans-serif;
+}
+
+/* Post Styles */
+
+.post-content {
+    font-family: 'Spectral', sans-serif;
+}
+
+/* Footer Styles */
+
+.footer {
+    font-family: 'Spectral', sans-serif;
+}
 
 /* Media queries for smaller screens */
 
