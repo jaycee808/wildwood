@@ -15,8 +15,7 @@
 
     <div class="page-content">
         <?php the_excerpt(); ?>
-        <a class="btn" href="<?php the_permalink() ?>">Continue Reading</a>
-        
+        <div class="post-btn"><a href="<?php the_permalink() ?>">Continue Reading</a></div>
     </div>
 
     <?php

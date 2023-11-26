@@ -2,15 +2,15 @@
 
 <section class="home-hero">
     <div class="hero-content">
-        <div class="hero-headline">Welcome.</div>
-        <div class="hero-tagline">Get lost in the wilderness.</div>
+        <div class="hero-headline">Welcome to Wildwood.</div>
+        <div class="hero-tagline">Get lost in the wilderness and immerse yourself in the soothing ambiance of our spa</div>
         <button class="home-button"><a href="<?php echo site_url('/treatments'); ?>">Book Now</a></button>
     </div>
 
     </div>
 </section>
 
-    <div class="hero-grid">
+    <!-- <div class="hero-grid">
     <div class="hero-grid-heading">Treatments</div>
         <div class="home-page-grid">
             <div class="grid-item">
@@ -28,7 +28,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <?php get_footer(); ?>

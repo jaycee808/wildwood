@@ -13,7 +13,6 @@ while(have_posts()) {
 
     <div class="page-content">
         <?php the_content(); ?>
-        <hr>
     </div>
 
     <?php

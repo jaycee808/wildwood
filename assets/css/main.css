@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #003B2A;
 }
 
 a {
@@ -74,7 +75,7 @@ a {
 }
 
 .home-hero .hero-headline {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     border-bottom: 1px solid #718878;
     padding: 0.75rem;
@@ -82,7 +83,7 @@ a {
 }
 
 .home-hero .hero-tagline {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.75rem;
     color: #EDE9E6;
 }
@@ -146,21 +147,61 @@ a {
 
 /* Page Styles */
 
+.page-banner {
+    font-family: 'Spectral', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    color: #EDE9E6;
+}
+
+.page-container {
+    color: #EDE9E6;
+    background-color: #003B2E;
+}
+
 .page-title {
     font-family: 'Spectral', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #003B2E;
-    background-color: #EDE9E6;
+    margin: 1.25rem;
+    border-bottom: 1px solid #EDE9E6;
 }
 
 .page-content {
     font-family: 'Spectral', sans-serif;
-    color: #003B2E;
-    background-color: #EDE9E6;
+    color: #EDE9E6;
+    background-color: #003B2E;
+}
+
+.page-content p {
+    font-size: 1.25rem;
+    margin: 1.25rem;
+}
+
+.page-content .post-btn {
+    padding: 0.5rem;
+    font-family: 'Spectral', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #EDE9E6;
+    text-align: center;
 }
 
 /* Post Styles */
+
+.post-container {
+    color: #EDE9E6;
+    background-color: #003B2E;
+}
+
+.post-container p {
+    font-size: 1.25rem;
+    margin: 1.25rem;
+}
+
 .post-title {
     font-family: 'Spectral', sans-serif;
 }

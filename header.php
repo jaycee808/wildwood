@@ -12,8 +12,7 @@
         <ul>
             <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 17) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/about'); ?>">About</a></li>
             <li <?php if (is_page('treatments') or wp_get_post_parent_id(0) == 29) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/treatments'); ?>">Treatments</a></li>
-            <li <?php if (is_page('articles') or wp_get_post_parent_id(0) == 23) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/articles'); ?>">Articles</a></li>
-            <li <?php if (is_page('contact') or wp_get_post_parent_id(0) == 25) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
+            <li <?php if (is_page('appointments') or wp_get_post_parent_id(0) == 25) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/appointments') ?>">Appointments</a></li>
         </ul>
     </div>
 </nav>
