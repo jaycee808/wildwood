@@ -19,8 +19,8 @@ a {
 .logo {
     font-size: 4rem;
     font-family: 'Fuggles', serif;
-    background-color: #EDE9E6;
-    color: #003B2E;
+    color: #EDE9E6;
+    background-color: #003B2E;
 }
 
 .navbar {
@@ -32,10 +32,10 @@ a {
     padding: 0;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: #003B2E;
     color: #EDE9E6;
-    border-top: 2px solid #946840;
-    border-bottom: 2px solid #946840
+    background-color: #1F1F1F;
+    border-top: 1px solid #718878;
+    border-bottom: 1px solid #718878;
 }
 
 .navbar .nav-menu ul {
@@ -63,7 +63,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url("../images/hero-bg.png");
+    background-image: url("../images/hero-bg-2.png");
     background-size: cover;
     background-position: center center;
 }
@@ -117,8 +117,8 @@ a {
     text-align: center;
     font-size: 24px;
     line-height: 1.4;
-    border-top: 2px solid #946840;
-    border-bottom: 2px solid #946840
+    border-top: 1px solid #718878;
+    border-bottom: 1px solid #718878;
 }
 
 .grid-heading {
@@ -176,13 +176,13 @@ a {
 
 .footer {
     font-family: 'Spectral', sans-serif;
-    background-color: #003B2E;
+    background-color: #1F1F1F;
     color: #EDE9E6;
     padding: 20px 0;
     text-align: center;
     font-size: 24px;
     line-height: 1.4;
-    border-top: 2px solid #946840;
+    border-top: 1px solid #946840;
 }
 
 .footer-content {
