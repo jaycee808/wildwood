@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Fuggles&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Style+Script&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -18,6 +19,8 @@ a {
 .logo {
     font-size: 4rem;
     font-family: 'Fuggles', serif;
+    background-color: #003B2E;
+    color: #DACABE;
 }
 
 .navbar {
@@ -26,14 +29,20 @@ a {
 }
 
 .navbar .nav-menu {
-
+    padding: 0;
+    background-color: #DACABE;
+    color: #003B2E;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
 
 .navbar .nav-menu ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     padding: 0;
+    margin: 0.25rem;
 }
 
 .navbar .nav-menu li {
@@ -41,13 +50,48 @@ a {
 }
 
 .navbar .nav-menu li a:hover {
-    color: rgb(243, 59, 90);
+    border-bottom: 2px solid #003B2E;
 }
 
 /* Home Page */
 
 .home-hero {
     font-family: 'Spectral', sans-serif;
+    height: 80dvh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-hero .hero-content {
+    padding: 1rem 2rem;
+    margin: 20px;
+}
+
+.home-hero .hero-headline {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #718878;
+    padding: 0.75rem;
+    color: #DACABE;
+}
+
+.home-hero .hero-tagline {
+    font-size: 2rem;
+    padding: 0.75rem;
+    color: #DACABE;
+}
+
+.home-hero .home-button {
+    padding: 0.5rem;
+    font-family: 'Spectral', sans-serif;
+    text-transform: uppercase;
+    background-color: #003B2E;
+    color: #DACABE
 }
 
 /* Home Page Grid */
@@ -58,30 +102,109 @@ a {
     align-items: stretch;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    }
+    background-color: #DACABE;
+    color: #003B2A;
+}
+
+.hero-grid-heading {
+    font-family: 'Spectral', sans-serif;
+    background-color: #003B2E;
+    color: #DACABE;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.grid-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    font-family: 'Fuggles', serif;
+    border-bottom: 1px solid #003B2E;
+}
 
 .grid-item {
     width: 30rem;
     margin: 0.75rem;
     padding: 0 0.5rem;
-    }
+}
+
+.hero-grid .grid-button {
+    padding: 0.5rem;
+    font-family: 'Spectral', sans-serif;
+    text-transform: uppercase;
+    background-color: #003B2E;
+    color: #DACABE
+}
 
 /* Page Styles */
+.page-title {
+    font-family: 'Spectral', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #003B2E;
+    color: #DACABE;
+}
 
 .page-content {
     font-family: 'Spectral', sans-serif;
+    background-color: #DACABE;
+    color: #003B2E;
 }
 
 /* Post Styles */
+.post-title {
+    font-family: 'Spectral', sans-serif;
+}
 
 .post-content {
     font-family: 'Spectral', sans-serif;
+    padding: 0.5rem;
+    background-color: #DACABE;
+    color: #003B2E;
+    border-top: 1px solid #003B2E;
 }
 
 /* Footer Styles */
 
 .footer {
     font-family: 'Spectral', sans-serif;
+    background-color: #003B2E;
+    color: #DACABE;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info, .footer-social {
+    flex: 1;
+}
+
+.footer-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    font-family: 'Fuggles', serif;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #718878;
+}
+
+.social-icon i {
+    font-size: 2rem;
 }
 
 /* Media queries for smaller screens */

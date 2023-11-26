@@ -8,9 +8,7 @@ while(have_posts()) {
 ?>
 
     <div class="page-banner">
-        <div class="page-banner-content">
-            <h2 class="page-banner-title"><?php the_title(); ?></h2>
-        </div>
+        <div class="page-title"><?php the_title(); ?></div>
     </div>
 
     <div class="page-content">
