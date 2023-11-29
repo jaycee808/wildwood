@@ -161,12 +161,11 @@ a {
     background-color: #003B2E;
 }
 
-.page-title {
+.page-title, .post-title {
     font-family: 'Spectral', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 1.25rem;
-    border-bottom: 1px solid #EDE9E6;
 }
 
 .page-content {
@@ -192,11 +191,6 @@ a {
 
 /* Post Styles */
 
-.post-container {
-    color: #EDE9E6;
-    background-color: #003B2E;
-}
-
 .post-container p {
     font-size: 1.25rem;
     margin: 1.25rem;
@@ -211,6 +205,13 @@ a {
     padding: 0.5rem;
     background-color: #EDE9E6;
     color: #003B2E;
+}
+
+/* Booking Form */
+
+.ea-bootstrap {
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer Styles */

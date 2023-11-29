@@ -3,7 +3,10 @@
             <div class="footer-info">
                 <div class="footer-heading">Contact Information</div>
                 <p>Wildwood Spa</p>
-                <p>Mulberry Road, Ayrshire</p>
+                <p>Mulberry Forest</p>
+                <p>Oakwood Lane</p>
+                <p>Ayrshire</p>
+                <p>KA8 1PL</p>
                 <p>Email: info@wildwood.uk</p>
                 <p>Phone: (0156) 885-4512</p>
             </div>

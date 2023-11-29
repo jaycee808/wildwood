@@ -6,7 +6,9 @@
         <div class="post-container">
             <div class="post-content">
                 <div class="post-title"><?php the_title(); ?></div>
-                <?php the_content(); ?>
+                    <div class="post-text">
+                        <?php the_content(); ?>
+                    </div>
             </div>
         </div>
 <?php 
