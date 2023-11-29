@@ -4,7 +4,7 @@
     <div class="hero-content">
         <div class="hero-headline">Welcome to Wildwood.</div>
         <div class="hero-tagline">Get lost in the wilderness and immerse yourself in the soothing ambiance of our spa</div>
-        <button class="home-button"><a href="<?php echo site_url('/treatments'); ?>">Book Now</a></button>
+        <button class="home-button"><a href="<?php echo site_url('/appointments'); ?>">Book Now</a></button>
     </div>
 
     </div>

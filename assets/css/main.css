@@ -214,6 +214,24 @@ a {
     justify-content: center;
 }
 
+.ea-bootstrap .form-control {
+    width: 300px;
+}
+
+
+.step {
+    font-family: 'Spectral', sans-serif;
+    background-color: #003B2E;
+}
+
+.block {
+    background-color: #003B2E;
+}
+
+input[type="text"]:focus {
+    background-color: #003B2E;
+}
+
 /* Footer Styles */
 
 .footer {
