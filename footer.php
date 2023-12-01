@@ -7,7 +7,7 @@
                 <p>Oakwood Lane</p>
                 <p>Ayrshire</p>
                 <p>KA8 1PL</p>
-                <p>Email: info@wildwood.uk</p>
+                <p>Email: info@wildwoodretreat.co.uk</p>
                 <p>Phone: (0156) 885-4512</p>
             </div>
             <div class="footer-social">
