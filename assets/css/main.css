@@ -84,10 +84,12 @@ a {
 .home-hero .home-button {
     padding: 0.5rem;
     font-family: 'Kalnia', serif;
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
     font-weight: 800;
     background-color: #F9BC60;
     color: #001E1D;
+    padding: 0.5rem;
 }
 
 /* Home Page Grid */
@@ -150,8 +152,6 @@ a {
     text-transform: uppercase;
     background-color: #F9BC60;
     color: #001E1D;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Page Styles */
@@ -254,7 +254,7 @@ a {
 }
 
 .home-hero .home-button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .navbar .nav-menu {
@@ -263,6 +263,28 @@ a {
 
 .page-footer {
     font-size: 1.25rem;
+}
+
+.grid-content {
+    padding: 0.5rem;
+}
+
+.grid-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Kalnia', serif;
+}
+
+.grid-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.grid-button {
+    padding: 0.5rem;
+    font-family: 'Kalnia', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 }
 
