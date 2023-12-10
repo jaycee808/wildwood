@@ -168,10 +168,6 @@ a {
     font-weight: 400;
 }
 
-.page-container {
-
-}
-
 .page-title, .post-title {
     font-family: 'Kalnia', serif;
     font-size: 3rem;
@@ -215,7 +211,6 @@ a {
 .ea-bootstrap {
     display: flex;
     justify-content: center;
-    z-index: 10;
 }
 
 .ea-bootstrap .form-control {
@@ -227,18 +222,13 @@ a {
     font-size: 1rem;
 }
 
-input[type="text"]:focus {
-
-}
-
 /* Footer Styles */
 
 .page-footer {
     font-family: 'Kalnia', serif;
     text-align: center;
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 1.4;
-    text-transform: uppercase;
     padding: 20px 0;
     width: 100%;
     bottom: 0;
@@ -247,14 +237,6 @@ input[type="text"]:focus {
 }
 
 /* Media queries for smaller screens */
-
-@media (max-width: 800px) {
-
-}
-
-@media (max-width: 600px) {
-
-}
 
 @media (max-width: 400px) {
 
@@ -278,12 +260,11 @@ input[type="text"]:focus {
 .navbar .nav-menu {
     font-size: 1rem;
 }
+
+.page-footer {
+    font-size: 1.25rem;
 }
-
-@media (max-width: 360px) {
-
 }
-
 
 
 
