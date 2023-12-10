@@ -15,4 +15,3 @@ function wildwoodFeatures() {
 add_action('after_setup_theme', 'wildwoodFeatures');
 
 ?>
-
