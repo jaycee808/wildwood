@@ -76,14 +76,14 @@ a {
 
 .home-hero .hero-tagline {
     font-size: 2rem;
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     padding: 1rem;
     font-weight: 300;
 }
 
 .home-hero .home-button {
     padding: 0.5rem;
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 800;
@@ -115,12 +115,10 @@ a {
 }
 
 .grid-item {
-    width: 30rem;
+    width: 25rem;
     margin: 1rem 0.75rem;
     line-height: 2.5rem;
     font-family: 'Kalnia', serif;
-    width: 30rem;
-    border-radius: 0 7px 10px 7px;
     border-radius: 7px 7px 7px 7px;
         -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -137,7 +135,7 @@ a {
 }
 
 .grid-text {
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 1.5rem;
@@ -146,7 +144,7 @@ a {
 
 .grid-button {
     padding: 0.5rem;
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -175,7 +173,7 @@ a {
 }
 
 .page-content {
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
 }
 
 .page-content p {
@@ -202,7 +200,7 @@ a {
 }
 
 .post-content {
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     padding: 0.5rem;
 }
 
@@ -218,7 +216,7 @@ a {
 }
 
 .step {
-    font-family: 'Kalnia', serif;
+    font-family: 'Spectral', serif;
     font-size: 1rem;
 }
 
@@ -282,11 +280,7 @@ a {
 
 .grid-button {
     padding: 0.5rem;
-    font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 800;
 }
 }
-
-
-
