@@ -7,8 +7,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #001E1D;
-    color: #FFFFFE;
+    color: #EDEADE;
+    background-image: url("../images/1.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 a {
@@ -32,9 +35,9 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.75rem;
     padding: 0;
-    border-top: 1px solid #FFFFFE;
-    border-bottom: 1px solid #FFFFFE;
-    background: #004643;
+    border-top: 1px solid #F9BC60;
+    border-bottom: 1px solid #F9BC60;
+    background: #080C08C8;
 }
 
 .navbar .nav-menu ul {
@@ -46,7 +49,7 @@ a {
 }
 
 .navbar .nav-menu li a:hover {
-    border-bottom: 2px solid #FFFFFE;
+    border-bottom: 2px solid #EDEADE;
 }
 
 /* Home Page */
@@ -57,9 +60,6 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url("../images/hero-bg-2.png");
-    background-size: cover;
-    background-position: center center;
 }
 
 .home-hero .hero-content {
@@ -71,7 +71,7 @@ a {
     font-size: 4rem;
     font-family: 'Kalnia', serif;
     padding: 0.75rem;
-    border-bottom: 1px solid #FFFFFE;
+    border-bottom: 1px solid #EDEADE;
 }
 
 .home-hero .hero-tagline {
@@ -82,14 +82,15 @@ a {
 }
 
 .home-hero .home-button {
-    padding: 0.5rem;
     font-family: 'Spectral', serif;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
-    background-color: #F9BC60;
-    color: #001E1D;
-    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
 }
 
 /* Home Page Grid */
@@ -124,7 +125,7 @@ a {
         -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     border: 1px solid #F9BC60;
-    background: #004643;
+    background: #080C08C8;
 }
 
 .grid-heading {
@@ -148,8 +149,11 @@ a {
     font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
-    background-color: #F9BC60;
-    color: #001E1D;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
 }
 
 /* Page Styles */
@@ -168,8 +172,7 @@ a {
 
 .page-title, .post-title {
     font-family: 'Kalnia', serif;
-    font-size: 3rem;
-    margin: 1.25rem;
+    font-size: 2rem;
 }
 
 .page-content {
@@ -225,13 +228,78 @@ a {
 .page-footer {
     font-family: 'Kalnia', serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     padding: 20px 0;
     width: 100%;
     bottom: 0;
-    border-top: 1px solid #FFFFFE;
     margin-top: 2.5rem;
+}
+
+/* Accommodation Styles */
+
+.mphb_sc_rooms-wrapper {
+    display: grid;
+    margin: 0;
+}
+
+.mphb-room-type {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F9BC60;
+    border-radius: 4px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #080C08C8;
+}
+
+.mphb-room-type img {
+    width: 100%;
+    height: auto;
+}
+
+.mphb-room-type-title, .mphb-room-type-details-title {
+    font-family: "Kalnia", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #080C08C8;
+    color: #EDEADE;
+}
+
+.mphb-loop-room-type-attributes {
+    padding: 1.5rem;
+}
+
+.mphb-view-details-button {
+    border-bottom: 1px solid #F9BC60;
+}
+
+.mphb-book-button {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+    margin-left: 1.25rem;
+}
+
+/* Accommodation Search Styles */
+
+.mphb_sc_search-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #F9BC60;
+    border-radius: 4px;
+    font-family: 'Spectral', serif;
 }
 
 /* Media queries for smaller screens */
