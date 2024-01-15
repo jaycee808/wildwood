@@ -2,15 +2,15 @@
 
 <section class="home-hero">
     <div class="hero-content">
-        <div class="hero-headline">Welcome to Wildwood.</div>
-        <div class="hero-tagline">Get lost in the soothing ambiance of the wilderness</div>
+        <!-- <div class="hero-headline">Welcome</div> -->
+        <div class="hero-tagline">escape to the wilderness</div>
         <button class="home-button"><a href="<?php echo site_url('/bookings'); ?>">Book Now</a></button>
     </div>
 
     </div>
 </section>
 
-<section class="hero-grid">
+<!-- <section class="hero-grid">
     <div class="hero-grid-heading">Treatments</div>
         <div class="home-page-grid">
             <div class="grid-item">
@@ -49,6 +49,6 @@
             </div>
             </div>
         </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>
