@@ -170,8 +170,9 @@ a {
 }
 
 .page-title, .post-title {
-    font-family: 'Kalnia', serif;
+    font-family: "Kalnia", serif;
     font-size: 2rem;
+    text-align: center;
 }
 
 .page-content {
@@ -192,13 +193,21 @@ a {
 
 /* Post Styles */
 
+.post-text {
+    font-size: 1.25rem;
+    background: #080C08C8;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .post-container p {
     font-size: 1.25rem;
     margin: 1.25rem;
-}
-
-.post-title {
-    font-family: 'Kalnia', serif;
 }
 
 .post-content {
@@ -229,12 +238,10 @@ a {
     font-size: 1.25rem;
     text-align: center;
     line-height: 1.4;
-    position: fixed;
     bottom: 0;
     color: #EDEADE;
     padding: 0.5rem;
     width: 100%;
-    background-color: #080c08cd;
 }
 
 /* Accommodation Styles */
@@ -297,24 +304,177 @@ a {
     margin-bottom: 1.25rem;
 }
 
+/* Accommodation Individual Page Styles */
+
+.mphb-details-title, .mphb-calendar-title, .mphb-reservation-form-title {
+    text-align: center;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    background: #163832;
+}
+
+.mphb-reserve-btn-wrapper .button {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.mphb-calendar {
+    font-family: "Spectral", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Accommodation Search Styles */
 
 .mphb_sc_search-wrapper {
-    width: 80%;
+    font-family: 'Spectral', serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    border: 1px solid #F9BC60;
+    background: #080c08;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.5);
+}
+
+.mphb_sc_search-wrapper p {
+    font-family: 'Spectral', serif;
+    font-size: 1.75rem;
+}
+
+.mphb_sc_search-submit-button-wrapper .button {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.mphb_sc_search_results-wrapper, .mphb_sc_checkout-wrapper  {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #080C08C8;
+}
+
+.mphb-booking-details {
+    text-align: center;
+}
+
+.mphb-room-details .mphb-room-type-title {
+    font-size: 1.5rem;
+    background: transparent;
+}
+
+.mphb-recommendation-title, .mphb-booking-details-title, .mphb-price-breakdown-title {
+    font-family: "Kalnia", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.mphb-recommendation-details-list {
+    font-family: "Spectral", sans-serif;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.mphb-recommendation-total {
+    font-family: "Kalnia", serif;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.mphb-recommendation-reserve-button {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+    margin: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.mphb-confirm-reservation {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+    margin: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Price Breakdown Table */
+
+.mphb-price-breakdown, .mphb-customer-details {
+    border: 1px solid #163832;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #F9BC60;
-    border-radius: 4px;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+.mphb-customer-details {
+    border: 1px solid #163832;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.mphb_sc_checkout-submit-wrapper .button {
     font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid #F9BC60;
+    border-radius: 4px;
+    color: #EDEADE;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Checkout Page Styles */
+
+.mphb_sc_checkout-wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 55dvh;
+    background: transparent;
 }
 
 /* Media queries for smaller screens */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
 .home-hero .hero-content {
     padding: 0.25rem;
     margin: 0;
+    width: 100%;
 }
 
 .home-hero .hero-headline {
@@ -322,7 +482,7 @@ a {
 }
 
 .home-hero .hero-tagline {
-    font-size: 1.5rem;
+    font-size: 4rem;
 }
 
 .home-hero .home-button {
@@ -357,4 +517,11 @@ a {
     font-size: 1.5rem;
     font-weight: 800;
 }
+
+/* Accommodation Search Styles */
+
+.mphb_sc_search-wrapper {
+    width: 90%;
+}
+
 }
