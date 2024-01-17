@@ -2,11 +2,12 @@
 
 *, *:before, *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     color: #EDEADE;
     background-image: url("../images/1.png");
     background-size: cover;
@@ -34,7 +35,6 @@ a {
 .navbar .nav-menu {
     font-family: 'Kalnia', serif;
     font-size: 1.75rem;
-    padding: 0;
     border-top: 1px solid #F9BC60;
     border-bottom: 1px solid #F9BC60;
     background: #080C08C8;
@@ -44,8 +44,6 @@ a {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    padding: 0;
-    margin: 0.25rem;
 }
 
 .navbar .nav-menu li a:hover {
@@ -70,7 +68,6 @@ a {
 .home-hero .hero-headline {
     font-size: 4rem;
     font-family: 'Kalnia', serif;
-    padding: 0.75rem;
     border-bottom: 1px solid #EDEADE;
 }
 
@@ -88,78 +85,18 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-}
-
-
-/* Home Page Grid */
-
-.home-page-grid {
-    display: flex;
-    padding: 0.5rem;
-    align-items: stretch;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.hero-grid-heading {
-    font-size: 3rem;
-    font-family: 'Kalnia', serif;
-    text-align: center;
-    line-height: 1.4;
-    padding: 20px 0;
-}
-
-.grid-content {
-    padding: 2rem;
-}
-
-.grid-item {
-    width: 25rem;
-    margin: 1rem 0.75rem;
-    line-height: 2.5rem;
-    font-family: 'Kalnia', serif;
-    border-radius: 7px 7px 7px 7px;
-        -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    border: 1px solid #F9BC60;
-    background: #080C08C8;
-}
-
-.grid-heading {
-    font-size: 2.25rem;
-    margin-bottom: 1.5rem;
-    font-family: 'Kalnia', serif;
-    padding: 0.75rem;
-}
-
-.grid-text {
-    font-family: 'Spectral', serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    padding: 0.75rem;
-}
-
-.grid-button {
-    padding: 0.5rem;
-    font-family: 'Spectral', serif;
-    font-size: 2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 2px solid #F9BC60;
-    border-radius: 4px;
-    color: #EDEADE;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
 }
 
 /* Page Styles */
 
 .page-banner {
-    padding: 1rem;
     text-align: center;
+    font-family: "Kalnia", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    background: #163832;
+    color: #EDEADE;
 }
 
 .page-banner-title {
@@ -175,17 +112,19 @@ a {
     text-align: center;
 }
 
-.page-content {
+.page-content, .post-content {
     font-family: 'Spectral', serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #080c08;
 }
 
 .page-content p {
     font-size: 1.25rem;
-    margin: 1.25rem;
 }
 
 .page-content .post-btn {
-    padding: 0.5rem;
     font-family: 'Kalnia', serif;
     font-size: 1rem;
     text-align: center;
@@ -200,19 +139,17 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .post-container p {
     font-size: 1.25rem;
-    margin: 1.25rem;
 }
 
 .post-content {
     font-family: 'Spectral', serif;
-    padding: 0.5rem;
 }
 
 /* Booking Form */
@@ -235,12 +172,11 @@ a {
 
 .page-footer {
     font-family: 'Kalnia', serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
-    line-height: 1.4;
+    position: fixed;
     bottom: 0;
     color: #EDEADE;
-    padding: 0.5rem;
     width: 100%;
 }
 
@@ -248,18 +184,17 @@ a {
 
 .mphb_sc_rooms-wrapper {
     display: grid;
-    margin: 0;
 }
 
 .mphb-room-type {
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    background: #080C08C8;
-    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.5);
+    margin: 1rem auto;
+}
+
+.mphb-room-type ul{
+    list-style: none;
 }
 
 .mphb-room-type img {
@@ -273,17 +208,15 @@ a {
     font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    margin: 0;
-    padding: 0;
     background: #163832;
     color: #EDEADE;
+    margin: 1rem 0;
 }
 
 .mphb-loop-room-type-attributes {
     color: #EDEADE;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .mphb-view-details-button {
@@ -299,9 +232,8 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-    margin-left: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
 }
 
 /* Accommodation Individual Page Styles */
@@ -321,14 +253,11 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
 }
 
 .mphb-calendar {
     font-family: "Spectral", sans-serif;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Accommodation Search Styles */
@@ -339,9 +268,6 @@ a {
     flex-direction: column;
     border-radius: 4px;
     width: 40%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 2rem;
     border: 1px solid #F9BC60;
     background: #080c08;
     box-shadow: 0 15px 20px 0 rgba(0,0,0,0.5);
@@ -360,17 +286,22 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
 }
 
 .mphb_sc_search_results-wrapper, .mphb_sc_checkout-wrapper  {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    margin-right: auto;
-    margin-left: auto;
     background: #080C08C8;
+    margin-right: 8rem;
+    margin-left: 8rem;
+}
+
+.mphb_sc_search_results-info {
+    border-radius: 4px;
+    border: 1px solid #163832;
+    padding: 0.75rem;
 }
 
 .mphb-booking-details {
@@ -392,13 +323,11 @@ a {
 .mphb-recommendation-details-list {
     font-family: "Spectral", sans-serif;
     font-size: 1.25rem;
-    margin-right: 1.25rem;
 }
 
 .mphb-recommendation-total {
     font-family: "Kalnia", serif;
     font-size: 1.25rem;
-    margin-right: 1.25rem;
 }
 
 .mphb-recommendation-reserve-button {
@@ -410,9 +339,7 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-    margin: 1.25rem;
-    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
 }
 
 .mphb-confirm-reservation {
@@ -424,25 +351,18 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
-    margin: 1.25rem;
-    margin-bottom: 1.25rem;
 }
 
 /* Price Breakdown Table */
 
 .mphb-price-breakdown, .mphb-customer-details {
     border: 1px solid #163832;
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
-    padding: 1rem;
     font-size: 1.25rem;
 }
 .mphb-customer-details {
     border: 1px solid #163832;
     text-align: center;
-    padding: 1rem;
     font-size: 1.25rem;
 }
 
@@ -455,7 +375,7 @@ a {
     border: 2px solid #F9BC60;
     border-radius: 4px;
     color: #EDEADE;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
 }
 
 /* Checkout Page Styles */
@@ -472,8 +392,6 @@ a {
 @media (max-width: 500px) {
 
 .home-hero .hero-content {
-    padding: 0.25rem;
-    margin: 0;
     width: 100%;
 }
 
@@ -494,28 +412,7 @@ a {
 }
 
 .page-footer {
-    font-size: 1.25rem;
-}
-
-.grid-content {
-    padding: 0.5rem;
-}
-
-.grid-heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-family: 'Kalnia', serif;
-}
-
-.grid-text {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.grid-button {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 0.75rem;
 }
 
 /* Accommodation Search Styles */
