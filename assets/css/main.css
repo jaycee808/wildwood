@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Kalnia:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Vidaloka&family=Yeseva+One&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
+
 *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 a {
@@ -15,13 +23,18 @@ a {
 
 :root {
     --dark-green: #163832;
+    --dark-green-transparent: #163832bf;
     --mid-green: #255932;
+    --mid-green-transparent: #255932c9;
     --light-green: #B9C5AD;
+    --light-green-transparent: #b9c5adc2;
     --black: #070D07;
     --orange: #F9BC60;
     --tan: #A68241;
     --beige: #F2DCB3;
+    --beige-transparent: #f2dcb3c6;
     --white: #EDEADE;
+    --white-transparent: #EDEADEC4;
     --black-transparent: #080C08C8;
 }
 
@@ -30,8 +43,7 @@ a {
 .logo {
     font-family: "Fuggles", serif;
     font-size: 6rem;
-    color: var(--white);
-    background-color: var(--dark-green);
+    color: var(--dark-green);
     text-align: center;
 }
 
@@ -43,11 +55,11 @@ a {
 .navbar .nav-menu {
     font-family: "Kalnia", serif;
     font-size: 1.75rem;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white-transparent);
     padding: 0.25rem 0;
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--dark-green);
+    border-bottom: 1px solid var(--dark-green);
 }
 
 .navbar .nav-menu ul {
@@ -62,13 +74,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     color: var(--white);
-    background-image: url("../images/1.png");
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
 }
 
 .home-hero .hero-content {
@@ -81,6 +89,7 @@ a {
     font-family: "Kalnia", serif;
     font-weight: 400;
     padding: 1rem;
+    color: var(--black);;
 }
 
 .home-hero .home-button {
@@ -88,8 +97,8 @@ a {
     font-size: 1.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    background-color: transparent;
-    border: 2px solid var(--orange);
+    background-color: var(--dark-green);
+    border: 2px solid var(--beige);
     border-radius: 4px;
     color: var(--white);
     padding: 0.25rem 0.75rem;
@@ -101,10 +110,10 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1rem;
     text-align: center;
-    position: fixed;
+    position: static;
     bottom: 0;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white-transparent);
     width: 100%;
 }
 
@@ -115,22 +124,22 @@ a {
     font-family: "Kalnia", serif;
     font-size: 2.5rem;
     font-weight: 400;
-    background: var(--dark-green);
+    background: var(--dark-green-transparent);
     color: var(--white);
-    border-bottom: 1px solid var(--orange);
+    border-bottom: 1px solid var(--dark-green);
 }
 
 .page-content, .post-content {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    background: var(--white);
+    background: var(--white-transparent);
 }
 
 .page-content p {
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 /* Accommodation Styles */
@@ -143,7 +152,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .post-text ul {
@@ -157,7 +166,7 @@ a {
 .mphb-room-type img {
     width: 100%;
     height: auto;
-    border: 1px solid #F9BC60;
+    border: 1px solid var(--orange);
 }
 
 .mphb_sc_rooms-wrapper p {
@@ -181,7 +190,7 @@ a {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
     font-size: 1.25rem;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .mphb-view-details-button {
@@ -198,7 +207,7 @@ a {
     border-radius: 4px;
     color: var(--black);
     padding: 0.25rem 0.75rem;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 /* Calendar Styles */
@@ -238,7 +247,7 @@ a {
     font-size: 1.5rem;
     margin-top: 1rem;
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .mphb-recommendation-title {
@@ -279,10 +288,27 @@ a {
     margin-top: 1rem;
 }
 
+/* Spa Booking Form Styles */
 
-/* Spa Styles */
-
-.wp-block-group__inner-container {
-    font-family: 'Zen Maru Gothic', sans-serif;
+.ea-bootstrap {
+    display: flex;
+    justify-content: center;
 }
 
+.ea-bootstrap .form-control {
+
+}
+
+.step {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media queries for smaller screens */
+
+@media (max-width: 500px) {
+
+
+}
