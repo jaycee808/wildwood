@@ -140,10 +140,13 @@ a {
     margin-top: 1rem;
     overflow: scroll;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .mphb-datepick-popup {
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .datepick-nav, .datepick-ctrl {
@@ -166,7 +169,6 @@ a {
 /* Page & Post Styles */
 
 .page-banner, .post-title {
-    background-color: var(--white-transparent);
     text-decoration: none;
     font-family: "Kalnia", serif;
     font-size: 2rem;
@@ -181,6 +183,7 @@ a {
     font-size: 2rem;
     font-weight: 400;
     color: var(--black);
+    background-color: var(--white-transparent);
     text-align: center;
 }
 
@@ -273,6 +276,10 @@ a {
     font-size: 100%;
     margin-top: 1rem;
     overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Booking Form Styles */
@@ -296,13 +303,13 @@ a {
 
 /* Search Results after checking availability */
 
-.mphb_sc_search_results-wrapper {
+.mphb_sc_search_results-wrapper, .mphb_sc_checkout-wrapper {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
     font-size: 1.5rem;
     margin-top: 1rem;
     width: 90%;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .mphb-recommendation-title {
@@ -359,6 +366,61 @@ a {
     font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Checkout Page Styles */
+
+.mphb_sc_checkout-form {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--dark-green);
+    padding: 0.75rem;
+    background-color: var(--white-transparent);
+    color: var(--black);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mphb_sc_checkout-form>.mphb-checkout-section:not(:first-of-type){
+    margin-top: 0;
+}
+
+.mphb-price-details {
+    width: 500px;
+}
+
+.mphb-price-breakdown {
+    text-align: left;
+    border: 1px solid var(--dark-green);
+    background-color: var(--light-green);
+    border-radius: 4px;
+    padding: 1.25rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mphb-price-breakdown-dates {
+    border-bottom: 1px solid var(--dark-green);
+}
+
+.mphb-price-breakdown-accommodation-subtotal, .mphb-price-breakdown-dates-subtotal, .mphb-price-breakdown-subtotal {
+    display: none;
+}
+
+.mphb_sc_checkout-submit-wrapper .button {
+    font-family: 'Kalnia', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--dark-green);
+    border: 2px solid var(--beige);
+    border-radius: 4px;
+    color: var(--white);
+    width: 100%;
+    margin-top: 1rem;
 }
 
 /* Media queries for smaller screens */
