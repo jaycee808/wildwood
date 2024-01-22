@@ -22,8 +22,8 @@ a {
 /* Color Palette */
 
 :root {
-    --dark-green: #163832;
-    --dark-green-transparent: #163832bf;
+    --dark-green: #002C23;
+    --dark-green-transparent: #002c23c2;
     --mid-green: #255932;
     --mid-green-transparent: #255932c9;
     --light-green: #B9C5AD;
@@ -55,11 +55,11 @@ a {
 .navbar .nav-menu {
     font-family: "Kalnia", serif;
     font-size: 1.75rem;
-    color: var(--black);
-    background-color: var(--white-transparent);
+    color: var(--white);
+    background-color: var(--dark-green);
     padding: 0.25rem 0;
-    border-top: 1px solid var(--dark-green);
-    border-bottom: 1px solid var(--dark-green);
+    border-top: 1px solid var(--light-green);
+    border-bottom: 1px solid var(--light-green);
 }
 
 .navbar .nav-menu ul {
@@ -96,9 +96,8 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.75rem;
     font-weight: 800;
-    text-transform: uppercase;
     background-color: var(--dark-green);
-    border: 2px solid var(--beige);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
     color: var(--white);
     padding: 0.25rem 0.75rem;
@@ -124,9 +123,8 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--dark-green);
-    border: 2px solid var(--beige);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
     color: var(--white);
     width: 60%;
@@ -160,7 +158,6 @@ a {
     position: static;
     bottom: 0;
     color: var(--black);
-    background-color: var(--white-transparent);
     width: 100%;
 }
 
@@ -179,9 +176,8 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 800;
-    text-transform: uppercase;
     background-color: var(--light-green);
-    border: 2px solid var(--dark-green);
+    border: 1px solid var(--dark-green);
     border-radius: 4px;
     color: var(--black);
     padding: 0.25rem 0.75rem;
@@ -197,7 +193,6 @@ a {
     font-size: 2rem;
     font-weight: 400;
     color: var(--black);
-    background-color: var(--white-transparent);
     text-align: center;
 }
 /* Post Title */
@@ -214,14 +209,6 @@ a {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    background: var(--white-transparent);
-    border-bottom: 1px solid var(--dark-green);
-}
-
-.treatment-text {
-    font-size: 1.5rem;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    margin: 1rem 0;
 }
 
 .page-content p {
@@ -236,11 +223,20 @@ a {
     display: grid;
 }
 
-.mphb-room-type, .post-text {
+.mphb-room-type {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 1rem auto;
+    border: 1px solid var(--dark-green);
+    background-color: var(--white-transparent);
+}
+
+.post-text {
+    margin: 1rem;
+    border: 1px solid var(--dark-green);
+    background-color: var(--white-transparent);
+    border-radius: 4px;
 }
 
 .post-text ul {
@@ -254,7 +250,7 @@ a {
 .mphb-room-type img {
     width: 100%;
     height: auto;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--dark-green);
 }
 
 .mphb_sc_rooms-wrapper p {
@@ -272,6 +268,7 @@ a {
 
 .entry-title, .mphb-room-type-details-title, .mphb-details-title, .mphb-calendar-title, .mphb-reservation-form-title {
     border-bottom: 1px solid var(--dark-green);
+    margin-left: 1rem;
 }
 
 .mphb-loop-room-type-attributes, .mphb-single-room-type-attributes, .mphb-regular-price, .mphb-booking-form {
@@ -282,20 +279,23 @@ a {
 }
 
 .mphb-view-details-button {
-    border-bottom: 1px solid var(--dark-green);
+    border-bottom: 2px solid var(--dark-green);
 }
 
 .mphb-book-button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 800;
-    text-transform: uppercase;
-    background-color: var(--light-green);
-    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
-    color: var(--black);
+    color: var(--white);
     padding: 0.25rem 0.75rem;
-    width: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Calendar Styles */
@@ -321,11 +321,10 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 800;
-    text-transform: uppercase;
-    background-color: var(--light-green);
-    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
-    color: var(--black);
+    color: var(--white);
     padding: 0.25rem 0.75rem;
     margin: 1rem 0;
 }
@@ -355,7 +354,6 @@ a {
     border-radius: 4px;
     border: 1px solid var(--dark-green);
     padding: 1rem;
-    background-color: var(--white-transparent);
     color: var(--black);
 }
 
@@ -371,10 +369,10 @@ a {
     font-family: 'Kalnia', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    background-color: var(--beige);
-    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
-    color: var(--black);
+    color: var(--white);
     padding: 0.25rem 0.75rem;
     margin-top: 1rem;
 }
@@ -388,7 +386,7 @@ a {
 }
 
 .ea-bootstrap .form-control {
-
+    margin-top: 3rem;
 }
 
 .step {
@@ -396,6 +394,51 @@ a {
     font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
+}
+
+.wp-block-group__inner-container {
+    background-color: var(--white-transparent);
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid var(--dark-green);
+    border-radius: 4px;
+}
+
+.treatment-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.treatment-sub-title {
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--dark-green);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--white-transparent);
+}
+
+.treatment-text {
+    font-size: 1.5rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background-color: var(--white-transparent);
+    margin-top: 0;
+}
+
+.treatment-booking-form-title {
+    position: relative;
+    bottom: -4rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--dark-green);
+    border: 1px solid var(--light-green);
+}
+
+.ea-btn {
+    color: var(--white);
+    background-color: var(--dark-green);
 }
 
 /* Checkout Page Styles */
@@ -424,8 +467,9 @@ a {
 
 .mphb-price-breakdown {
     text-align: left;
-    border: 1px solid var(--dark-green);
-    background-color: var(--light-green);
+    border: 1px solid var(--light-green);
+    background-color: var(--dark-green);
+    color: var(--white);
     border-radius: 4px;
     padding: 1.25rem 5rem;
     margin-left: auto;
@@ -444,9 +488,8 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--dark-green);
-    border: 2px solid var(--beige);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
     color: var(--white);
     width: 100%;
@@ -457,5 +500,20 @@ a {
 
 @media (max-width: 500px) {
 
+    .mphb-price-details {
+        width: 300px;
+    }
 
+    .mphb_sc_checkout-submit-wrapper .button {
+        width: 90%;
+    }
+
+    .mphb_sc_checkout-form {
+        width: 320px;
+    }
+
+    .mphb-price-breakdown {
+        padding: 1rem;
+    }
+    
 }
