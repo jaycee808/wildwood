@@ -4,7 +4,8 @@
     <div class="hero-content">
         <!-- <div class="hero-headline">Welcome</div> -->
         <div class="hero-tagline">Escape to the Wilderness</div>
-        <button class="home-button"><a href="<?php echo site_url('/search-availability'); ?>">Book A Room</a></button>
+        <div class="search-rooms"><?php echo do_shortcode("[mphb_availability_search]")?></div>
+        <!-- <button class="home-button"><a href="<?php echo site_url('/search-availability'); ?>">Book A Room</a></button> -->
     </div>
 
     </div>
