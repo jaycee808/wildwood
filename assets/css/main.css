@@ -135,10 +135,15 @@ a {
 
 .datepick-popup {
     font-family: 'Zen Maru Gothic', sans-serif;
+    color: var(--black);
+    font-size: 100%;
+    margin-top: 1rem;
+    overflow: scroll;
+    width: 100%;
 }
 
 .mphb-datepick-popup {
-
+    
 }
 
 .datepick-nav, .datepick-ctrl {
@@ -161,13 +166,22 @@ a {
 /* Page & Post Styles */
 
 .page-banner, .post-title {
-    text-align: center;
+    background-color: var(--white-transparent);
+    text-decoration: none;
     font-family: "Kalnia", serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    background: var(--dark-green-transparent);
-    color: var(--white);
-    border-bottom: 1px solid var(--dark-green);
+    color: var(--black);
+    text-align: center;
+}
+
+.page-title {
+    text-decoration: none;
+    font-family: "Kalnia", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
 }
 
 .page-content, .post-content {
@@ -180,7 +194,7 @@ a {
 .page-content p {
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 /* Accommodation Styles */
@@ -193,7 +207,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 1rem;
+    margin: 0 auto;
 }
 
 .post-text ul {
@@ -231,7 +245,7 @@ a {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
     font-size: 1.25rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .mphb-view-details-button {
@@ -248,7 +262,7 @@ a {
     border-radius: 4px;
     color: var(--black);
     padding: 0.25rem 0.75rem;
-    margin: 1rem;
+    width: 100%;
 }
 
 /* Calendar Styles */
@@ -256,9 +270,9 @@ a {
 .mphb-calendar {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 100%;
     margin-top: 1rem;
-    width: 100%;
+    overflow: scroll;
 }
 
 /* Booking Form Styles */
@@ -303,10 +317,10 @@ a {
     font-size: 1.5rem;
     margin-top: 1rem;
     border-radius: 4px;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--dark-green);
     padding: 1rem;
-    background-color: var(--dark-green);
-    color: var(--white);
+    background-color: var(--white-transparent);
+    color: var(--black);
 }
 
 .mphb-recommendation ul {
@@ -321,10 +335,10 @@ a {
     font-family: 'Kalnia', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    background-color: transparent;
-    border: 2px solid var(--orange);
+    background-color: var(--beige);
+    border: 2px solid var(--dark-green);
     border-radius: 4px;
-    color: var(--white);
+    color: var(--black);
     padding: 0.25rem 0.75rem;
     margin-top: 1rem;
 }
