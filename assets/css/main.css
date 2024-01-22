@@ -28,13 +28,13 @@ a {
     --mid-green-transparent: #255932c9;
     --light-green: #B9C5AD;
     --light-green-transparent: #b9c5adc2;
-    --black: #070D07;
     --orange: #F9BC60;
     --tan: #A68241;
     --beige: #F2DCB3;
     --beige-transparent: #f2dcb3c6;
     --white: #EDEADE;
     --white-transparent: #EDEADEC4;
+    --black: #070D07;
     --black-transparent: #080C08C8;
 }
 
@@ -140,8 +140,6 @@ a {
     margin-top: 1rem;
     overflow: scroll;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .mphb-datepick-popup {
@@ -168,13 +166,29 @@ a {
 
 /* Page & Post Styles */
 
-.page-banner, .post-title {
+.page-banner, .post-title, .page-banner-title, .page-banner-content {
     text-decoration: none;
     font-family: "Kalnia", serif;
     font-size: 2rem;
     font-weight: 400;
     color: var(--black);
     text-align: center;
+}
+
+.post-btn {
+    font-family: 'Kalnia', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--light-green);
+    border: 2px solid var(--dark-green);
+    border-radius: 4px;
+    color: var(--black);
+    padding: 0.25rem 0.75rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 
 .page-title {
@@ -186,18 +200,34 @@ a {
     background-color: var(--white-transparent);
     text-align: center;
 }
+/* Post Title */
+
+.wp-block-heading {
+    font-family: "Kalnia", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+}
 
 .page-content, .post-content {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
     background: var(--white-transparent);
+    border-bottom: 1px solid var(--dark-green);
+}
+
+.treatment-text {
+    font-size: 1.5rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 1rem 0;
 }
 
 .page-content p {
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
-    margin: 1rem auto;
+    margin: 1rem; 
 }
 
 /* Accommodation Styles */
@@ -248,7 +278,7 @@ a {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
     font-size: 1.25rem;
-    margin: 1rem auto;
+    margin: 1rem;
 }
 
 .mphb-view-details-button {
@@ -274,12 +304,11 @@ a {
     font-family: 'Zen Maru Gothic', sans-serif;
     color: var(--black);
     font-size: 100%;
+    width: 100%;
     margin-top: 1rem;
     overflow: scroll;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 /* Booking Form Styles */
@@ -355,6 +384,7 @@ a {
 .ea-bootstrap {
     display: flex;
     justify-content: center;
+    white-space: normal !important;
 }
 
 .ea-bootstrap .form-control {

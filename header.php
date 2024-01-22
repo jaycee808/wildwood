@@ -11,7 +11,7 @@
     <div class="nav-menu">
         <ul>
             <li <?php if (is_page('hotel') or wp_get_post_parent_id(0) == 97) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/hotel'); ?>">Hotel</a></li>
-            <li <?php if (is_page('spa') or wp_get_post_parent_id(0) == 97) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/spa'); ?>">Spa</a></li>
+            <li <?php if (is_page('treatments') or wp_get_post_parent_id(0) == 97) echo 'class="active-menu-item"' ?>><a href="<?php echo site_url('/treatments'); ?>">Spa</a></li>
         </ul>
     </div>
 </nav>
