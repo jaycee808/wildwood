@@ -74,14 +74,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
     text-align: center;
     color: var(--white);
-}
-
-.home-hero .hero-content {
-    width: 90%;
-    height: 90%;
+    height: 70dvh;
 }
 
 .home-hero .hero-tagline {
@@ -115,8 +110,22 @@ a {
     border-radius: 4px;
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
-    width: fit-content;
     padding: 1rem;
+    width: 375px;
+}
+
+.search-rooms form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-rooms form>* {
+    flex: 1 1 140px;
+    text-align: left;
+}
+
+p.mphb-required-fields-tip {
+    display: none;
 }
 
 .mphb_sc_search-submit-button-wrapper .button {
@@ -127,7 +136,7 @@ a {
     border: 1px solid var(--light-green);
     border-radius: 4px;
     color: var(--white);
-    width: 60%;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -155,9 +164,8 @@ a {
     font-family: 'Kalnia', serif;
     font-size: 1rem;
     text-align: center;
-    position: static;
-    bottom: 0;
-    color: var(--black);
+    color: var(--dark-green);
+    background-color: var(--white-transparent);
     width: 100%;
 }
 
@@ -205,10 +213,19 @@ a {
     text-decoration: none;
 }
 
-.page-content, .post-content {
+.page-content {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-content p {
@@ -298,6 +315,23 @@ a {
     margin-right: auto;
 }
 
+.mphb-confirm-reservation {
+    font-family: 'Kalnia', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: var(--tan);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    color: var(--black);
+    padding: 0.25rem 0.75rem;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
 /* Calendar Styles */
 
 .mphb-calendar {
@@ -307,8 +341,8 @@ a {
     width: 100%;
     margin-top: 1rem;
     overflow: scroll;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* Booking Form Styles */
@@ -355,6 +389,11 @@ a {
     border: 1px solid var(--dark-green);
     padding: 1rem;
     color: var(--black);
+    background-color: var(--white-transparent);
+}
+
+.mphb-reserve-room-section {
+    margin-bottom: 1rem;
 }
 
 .mphb-recommendation ul {
@@ -416,13 +455,11 @@ a {
     border-bottom: 1px solid var(--dark-green);
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: var(--white-transparent);
 }
 
 .treatment-text {
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
-    background-color: var(--white-transparent);
     margin-top: 0;
 }
 
@@ -431,9 +468,8 @@ a {
     bottom: -4rem;
     font-size: 2rem;
     text-align: center;
-    color: var(--white);
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
 }
 
 .ea-btn {
@@ -515,5 +551,12 @@ a {
     .mphb-price-breakdown {
         padding: 1rem;
     }
+
+    .post-content {
+    width: 90%;
+    }
     
+    .mphb-calendar {
+    display: grid;
+    }
 }
