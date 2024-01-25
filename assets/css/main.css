@@ -70,7 +70,7 @@ a {
 
 /* Home page Styles */
 
-.home-hero {
+.home-hero  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,6 +523,12 @@ p.mphb-required-fields-tip {
     color: var(--white);
     width: 100%;
     margin-top: 1rem;
+}
+
+/* Booking Confirmation Page */
+
+.mphb_sc_checkout-wrapper {
+    display: grid;
 }
 
 /* Media queries for smaller screens */
