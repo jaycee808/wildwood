@@ -82,7 +82,6 @@ a {
 .home-hero .hero-tagline {
     font-size: 2rem;
     font-family: "Kalnia", serif;
-    font-weight: 400;
     padding: 1rem;
     color: var(--black);;
 }
@@ -301,7 +300,6 @@ p.mphb-required-fields-tip {
 .mphb-book-button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    font-weight: 800;
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
@@ -317,7 +315,6 @@ p.mphb-required-fields-tip {
 .mphb-confirm-reservation {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    font-weight: 800;
     background-color: var(--light-green);
     border: 1px solid var(--black);
     border-radius: 4px;
@@ -353,7 +350,6 @@ p.mphb-required-fields-tip {
 .mphb-reserve-btn {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    font-weight: 800;
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
@@ -406,7 +402,6 @@ p.mphb-required-fields-tip {
 .mphb-recommendation-reserve-button {
     font-family: 'Kalnia', sans-serif;
     font-size: 1.5rem;
-    font-weight: 800;
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
@@ -522,7 +517,6 @@ p.mphb-required-fields-tip {
 .mphb_sc_checkout-submit-wrapper .button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    font-weight: 600;
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
