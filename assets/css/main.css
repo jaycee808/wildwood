@@ -131,7 +131,6 @@ p.mphb-required-fields-tip {
 .mphb_sc_search-submit-button-wrapper .button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    font-weight: 600;
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
@@ -319,7 +318,7 @@ p.mphb-required-fields-tip {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     font-weight: 800;
-    background-color: var(--tan);
+    background-color: var(--light-green);
     border: 1px solid var(--black);
     border-radius: 4px;
     color: var(--black);
@@ -559,4 +558,20 @@ p.mphb-required-fields-tip {
     .mphb-calendar {
     display: grid;
     }
+
+    .search-rooms {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    
+    .search-rooms form {
+        display: grid;
+    }
+    
+    .search-rooms form>* {
+        text-align: center;
+    }
+    
 }
