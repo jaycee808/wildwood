@@ -529,6 +529,12 @@ p.mphb-required-fields-tip {
 
 .mphb_sc_checkout-wrapper {
     display: grid;
+    text-align: center;
+    height: 60dvh;
+}
+
+p.mphb_sc_checkout-success-reservation-message {
+    margin-top: -7rem;
 }
 
 /* Media queries for smaller screens */
