@@ -248,7 +248,6 @@ p.mphb-required-fields-tip {
 }
 
 .post-text {
-    margin: 1rem;
     border: 1px solid var(--dark-green);
     background-color: var(--white-transparent);
     border-radius: 4px;
@@ -336,7 +335,6 @@ p.mphb-required-fields-tip {
     font-size: 100%;
     width: 100%;
     margin-top: 1rem;
-    overflow: scroll;
     display: flex;
     justify-content: center;
 }
@@ -558,11 +556,12 @@ p.mphb_sc_checkout-success-reservation-message {
     }
 
     .post-content {
-    width: 90%;
+        width: 90%;
     }
     
     .mphb-calendar {
-    display: grid;
+        display: grid;
+        overflow: scroll;
     }
 
     .search-rooms {
