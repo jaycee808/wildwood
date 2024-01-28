@@ -8,10 +8,11 @@
 }
 
 body {
-    background-image: url("../images/background.png");
+    background-image: url("../images/background/background.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: var(--white);
 }
 
 a {
@@ -43,7 +44,6 @@ a {
 .logo {
     font-family: "Fuggles", serif;
     font-size: 6rem;
-    color: var(--dark-green);
     text-align: center;
 }
 
@@ -55,7 +55,6 @@ a {
 .navbar .nav-menu {
     font-family: "Kalnia", serif;
     font-size: 1.75rem;
-    color: var(--white);
     background-color: var(--dark-green);
     padding: 0.25rem 0;
     border-top: 1px solid var(--light-green);
@@ -75,14 +74,12 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--white);
 }
 
 .home-hero .hero-tagline {
     font-size: 2rem;
     font-family: "Kalnia", serif;
     padding: 1rem;
-    color: var(--black);;
 }
 
 .home-hero .home-button {
@@ -92,7 +89,6 @@ a {
     background-color: var(--dark-green);
     border: 1px solid var(--light-green);
     border-radius: 4px;
-    color: var(--white);
     padding: 0.25rem 0.75rem;
 }
 
@@ -102,9 +98,8 @@ a {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    color: var(--black);
-    background-color: var(--white-transparent);
-    border: 1px solid var(--dark-green);
+    background-color: var(--dark-green-transparent);
+    border: 1px solid var(--orange);
     border-radius: 4px;
     font-size: 1.5rem;
     font-family: 'Zen Maru Gothic', sans-serif;
@@ -129,17 +124,15 @@ p.mphb-required-fields-tip {
 .mphb_sc_search-submit-button-wrapper .button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    border: 1px solid var(--orange);
     border-radius: 4px;
-    color: var(--white);
     width: 100%;
     margin-top: 1rem;
 }
 
 .datepick-popup {
     font-family: 'Zen Maru Gothic', sans-serif;
-    color: var(--black);
     font-size: 100%;
     margin-top: 1rem;
     overflow: scroll;
@@ -161,8 +154,7 @@ p.mphb-required-fields-tip {
     font-family: 'Kalnia', serif;
     font-size: 1rem;
     text-align: center;
-    color: var(--dark-green);
-    background-color: var(--white-transparent);
+    background-color: var(--dark-green-transparent);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -174,12 +166,19 @@ p.mphb-required-fields-tip {
     margin-bottom: 3rem;
 }
 
-.page-banner, .post-title, .page-banner-title, .page-banner-content {
+.post-title {
     text-decoration: none;
     font-family: "Kalnia", serif;
     font-size: 2rem;
     font-weight: 400;
-    color: var(--black);
+    text-align: center;
+}
+
+.page-banner, .page-banner-title, .page-banner-content  {
+    text-decoration: none;
+    font-family: "Kalnia", serif;
+    font-size: 2rem;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -190,7 +189,6 @@ p.mphb-required-fields-tip {
     background-color: var(--light-green);
     border: 1px solid var(--dark-green);
     border-radius: 4px;
-    color: var(--black);
     padding: 0.25rem 0.75rem;
     width: 90%;
     margin-left: auto;
@@ -203,7 +201,6 @@ p.mphb-required-fields-tip {
     font-family: "Kalnia", serif;
     font-size: 2rem;
     font-weight: 400;
-    color: var(--black);
     text-align: center;
 }
 
@@ -213,7 +210,6 @@ p.mphb-required-fields-tip {
     font-family: "Kalnia", serif;
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--black);
     text-decoration: none;
 }
 
@@ -249,14 +245,14 @@ p.mphb-required-fields-tip {
     flex-direction: column;
     width: 95%;
     margin: 1rem auto;
-    border: 1px solid var(--dark-green);
-    background-color: var(--white-transparent);
+    border: 1px solid var(--white);
     margin-bottom: 3rem;
+    background-color: var(--dark-green-transparent);
 }
 
 .post-text {
-    border: 1px solid var(--dark-green);
-    background-color: var(--white-transparent);
+    border: 1px solid var(--white);
+    background-color: var(--dark-green-transparent);
     border-radius: 4px;
 }
 
@@ -271,7 +267,7 @@ p.mphb-required-fields-tip {
 .mphb-room-type img {
     width: 100%;
     height: auto;
-    border: 1px solid var(--dark-green);
+    border: 1px solid var(--orange);
 }
 
 .mphb_sc_rooms-wrapper p {
@@ -283,33 +279,30 @@ p.mphb-required-fields-tip {
     font-family: "Kalnia", serif;
     font-size: 2rem;
     font-weight: 400;
-    color: var(--black);
     text-decoration: none;
 }
 
 .entry-title, .mphb-room-type-details-title, .mphb-details-title, .mphb-calendar-title, .mphb-reservation-form-title {
-    border-bottom: 1px solid var(--dark-green);
+    border-bottom: 1px solid var(--light-green);
     margin-left: 1rem;
 }
 
 .mphb-loop-room-type-attributes, .mphb-single-room-type-attributes, .mphb-regular-price, .mphb-booking-form {
     font-family: 'Zen Maru Gothic', sans-serif;
-    color: var(--black);
     font-size: 1.25rem;
     margin: 1rem;
 }
 
 .mphb-view-details-button {
-    border-bottom: 2px solid var(--dark-green);
+    border-bottom: 2px solid var(--light-green);
 }
 
 .mphb-book-button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    border: 1px solid var(--orange);
     border-radius: 4px;
-    color: var(--white);
     padding: 0.25rem 0.75rem;
     width: 98%;
     display: flex;
@@ -322,9 +315,8 @@ p.mphb-required-fields-tip {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
     background-color: var(--light-green);
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
     border-radius: 4px;
-    color: var(--black);
     padding: 0.25rem 0.75rem;
     width: 98%;
     display: flex;
@@ -338,7 +330,6 @@ p.mphb-required-fields-tip {
 
 .mphb-calendar {
     font-family: 'Zen Maru Gothic', sans-serif;
-    color: var(--black);
     font-size: 100%;
     width: 100%;
     margin-top: 1rem;
@@ -355,10 +346,9 @@ p.mphb-required-fields-tip {
 .mphb-reserve-btn {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    border: 1px solid var(--orange);
     border-radius: 4px;
-    color: var(--white);
     padding: 0.25rem 0.75rem;
     margin: 1rem 0;
 }
@@ -367,11 +357,11 @@ p.mphb-required-fields-tip {
 
 .mphb_sc_search_results-wrapper, .mphb_sc_checkout-wrapper {
     font-family: 'Zen Maru Gothic', sans-serif;
-    color: var(--black);
     font-size: 1.5rem;
     margin-top: 1rem;
     width: 90%;
     margin: 1rem auto;
+    background-color: var(--dark-green-transparent);
 }
 
 .mphb-recommendation-title {
@@ -386,10 +376,9 @@ p.mphb-required-fields-tip {
     font-size: 1.5rem;
     margin-top: 1rem;
     border-radius: 4px;
-    border: 1px solid var(--dark-green);
+    border: 1px solid var(--orange);
     padding: 1rem;
-    color: var(--black);
-    background-color: var(--white-transparent);
+    background-color: var(--dark-green-transparent);
 }
 
 .mphb-reserve-room-section {
@@ -407,10 +396,9 @@ p.mphb-required-fields-tip {
 .mphb-recommendation-reserve-button {
     font-family: 'Kalnia', sans-serif;
     font-size: 1.5rem;
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    border: 1px solid var(--orange);
     border-radius: 4px;
-    color: var(--white);
     padding: 0.25rem 0.75rem;
     margin-top: 1rem;
 }
@@ -437,10 +425,10 @@ p.mphb-required-fields-tip {
 }
 
 .wp-block-group__inner-container {
-    background-color: var(--white-transparent);
+    background-color: var(--dark-green-transparent);
     margin: 1rem auto;
     width: 90%;
-    border: 1px solid var(--dark-green);
+    border: 1px solid var(--white);
     border-radius: 4px;
 }
 
@@ -452,7 +440,7 @@ p.mphb-required-fields-tip {
 
 .treatment-sub-title {
     font-size: 1.5rem;
-    border-bottom: 1px solid var(--dark-green);
+    border-bottom: 1px solid var(--light-green);
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -468,13 +456,11 @@ p.mphb-required-fields-tip {
     bottom: -4rem;
     font-size: 2rem;
     text-align: center;
-    color: var(--black);
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--white);
 }
 
 .ea-btn {
-    color: var(--white);
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
 }
 
 /* Checkout Page Styles */
@@ -484,10 +470,9 @@ p.mphb-required-fields-tip {
     font-size: 1.5rem;
     margin-top: 1rem;
     border-radius: 4px;
-    border: 1px solid var(--dark-green);
+    border: 1px solid var(--white);
     padding: 0.75rem;
-    background-color: var(--white-transparent);
-    color: var(--black);
+    background-color: var(--dark-green-transparent);
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -505,7 +490,6 @@ p.mphb-required-fields-tip {
     text-align: left;
     border: 1px solid var(--light-green);
     background-color: var(--dark-green);
-    color: var(--white);
     border-radius: 4px;
     padding: 1.25rem 5rem;
     margin-left: auto;
@@ -523,10 +507,9 @@ p.mphb-required-fields-tip {
 .mphb_sc_checkout-submit-wrapper .button {
     font-family: 'Kalnia', serif;
     font-size: 1.5rem;
-    background-color: var(--dark-green);
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    border: 1px solid var(--orange);
     border-radius: 4px;
-    color: var(--white);
     width: 100%;
     margin-top: 1rem;
 }
